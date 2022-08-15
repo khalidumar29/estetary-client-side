@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div className='lg:mx-[10%] md:mx-[4%]'>
       <SearchBar />{" "}
-      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
+        <RentCard />
+        <RentCard />
         <RentCard />
       </div>
     </div>
