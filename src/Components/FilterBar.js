@@ -10,6 +10,7 @@ const FilterBar = () => {
     console.log(a);
     e.preventDefault();
   };
+
   return (
     <div className='my-12'>
       <form
@@ -37,7 +38,7 @@ const FilterBar = () => {
           <p className='text-black-50'>Price</p>
           <select
             name='price'
-            class='select select-ghost pl-0 text-black-50 focus:border-none focus:outline-none'
+            className='select select-ghost pl-0 text-black-50 focus:border-none focus:outline-none'
           >
             <option>$100-$200</option>
             <option>$300-$400</option>
@@ -48,7 +49,7 @@ const FilterBar = () => {
           <p className='text-black-50'>Property Type</p>
           <select
             name='property_type'
-            class='select select-ghost pl-0 text-black-50 focus:border-none focus:outline-none'
+            className='select select-ghost pl-0 text-black-50 focus:border-none focus:outline-none'
           >
             <option>House</option>
             <option>Office</option>

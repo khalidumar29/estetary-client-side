@@ -11,7 +11,7 @@ const Navbar = () => {
               "https://i.ibb.co/b1nnkRL/Blue-Purple-Simple-Minimalist-company-Logo-1.png"
             }
             alt=''
-            srcset=''
+            srcSet=''
           />
           <Link
             to={""}
@@ -37,7 +37,7 @@ const Navbar = () => {
                 Sell
               </Link>
             </li>
-            <li tabindex='0'>
+            <li tabIndex='0'>
               <Link className='font-semibold text-[20px]' to={""}>
                 Manage Property
                 <svg
@@ -63,7 +63,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li tabindex='0'>
+            <li tabIndex='0'>
               <Link className='font-semibold text-[20px]' to={""}>
                 Resources
                 <svg

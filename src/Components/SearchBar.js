@@ -10,7 +10,7 @@ const SearchBar = () => {
         <input
           type='text'
           placeholder='Type here...'
-          class='input input-bordered w-full max-w-xs'
+          className='input input-bordered w-full max-w-xs'
         />
       </div>
     </div>
