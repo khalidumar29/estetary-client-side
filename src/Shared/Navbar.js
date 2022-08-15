@@ -23,22 +23,22 @@ const Navbar = () => {
         <div className='flex'>
           <ul className='menu menu-horizontal p-0'>
             <li>
-              <Link className='font-semibold' to={""}>
+              <Link className='font-semibold text-[20px]' to={""}>
                 Rent
               </Link>
             </li>
             <li>
-              <Link className='font-semibold' to={""}>
+              <Link className='font-semibold text-[20px]' to={""}>
                 Buy
               </Link>
             </li>
             <li>
-              <Link className='font-semibold' to={""}>
+              <Link className='font-semibold text-[20px]' to={""}>
                 Sell
               </Link>
             </li>
             <li tabindex='0'>
-              <Link className='font-semibold' to={""}>
+              <Link className='font-semibold text-[20px]' to={""}>
                 Manage Property
                 <svg
                   className='fill-current'
@@ -52,19 +52,19 @@ const Navbar = () => {
               </Link>
               <ul className='p-2 bg-base-100'>
                 <li>
-                  <Link className='font-semibold' to={""}>
+                  <Link className='font-semibold text-[20px]' to={""}>
                     Submenu 1
                   </Link>
                 </li>
                 <li>
-                  <Link className='font-semibold' to={""}>
+                  <Link className='font-semibold text-[20px]' to={""}>
                     Submenu 2
                   </Link>
                 </li>
               </ul>
             </li>
             <li tabindex='0'>
-              <Link className='font-semibold' to={""}>
+              <Link className='font-semibold text-[20px]' to={""}>
                 Resources
                 <svg
                   className='fill-current'
@@ -78,12 +78,12 @@ const Navbar = () => {
               </Link>
               <ul className='p-2 bg-base-100'>
                 <li>
-                  <Link className='font-semibold' to={""}>
+                  <Link className='font-semibold text-[20px]' to={""}>
                     Submenu 1
                   </Link>
                 </li>
                 <li>
-                  <Link className='font-semibold' to={""}>
+                  <Link className='font-semibold text-[20px]' to={""}>
                     Submenu 2
                   </Link>
                 </li>
