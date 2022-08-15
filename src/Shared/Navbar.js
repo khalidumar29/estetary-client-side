@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav className=' md:mx-[2.5%] lg:mx-[5%]'>
-      <div className='navbar justify-between bg-base-100'>
+    <nav className='md:mx-[2.5%] lg:mx-[5%]'>
+      <div className='navbar justify-between bg-base-200'>
         <div className='flex items-center'>
           <img
             className='h-10 w-10'
