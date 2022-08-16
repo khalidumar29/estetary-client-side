@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
-const FilterBar = () => {
+const FilterBar = ({ setFilteredValue }) => {
+  const [location, setLocation] = useState("");
+  const [date, setDate] = useState(undefined);
   const handleFilter = (e) => {
-    const location = e.target.location.value;
-    const date = e.target.date.value;
-    const price = e.target.price.value;
-    const property_type = e.target.property_type.value;
-    const a = { location, date, price, property_type };
-    console.log(a);
     e.preventDefault();
+    const date1 = date.split("-");
+    const date2 = date1[2] + "-" + date1[1].slice(1) + "-" + date1[0];
+    const price = e.target.price.value;
+    const property_type = e.target.property_type.value.toLowerCase();
+    const a = { location, date: date2, price, property_type, search: true };
+    setFilteredValue(a);
   };
-
   return (
     <div className='my-12'>
       <form
@@ -24,6 +25,7 @@ const FilterBar = () => {
             className='bg-transparent pt-2 focus:border-none focus:outline-none text-black'
             placeholder='type location'
             type={"text"}
+            onChange={(e) => setLocation(e.target.value)}
           />
         </div>
         <div title='select move in date' className='border-x-2 p-4'>
@@ -32,6 +34,7 @@ const FilterBar = () => {
             name='date'
             className='focus:border-none pt-2 focus:outline-none'
             type='date'
+            onChange={(e) => setDate(e.target.value)}
           />
         </div>
         <div className='border-x-2 p-4'>
@@ -61,6 +64,7 @@ const FilterBar = () => {
             type={"submit"}
             className='btn btn-primary w-[70%]'
             value='Search'
+            disabled={location === "" || date === undefined}
           />
         </div>
       </form>
